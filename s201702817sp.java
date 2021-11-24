@@ -7,7 +7,7 @@ public class s201702817sp {
 		try
 		{
 			Class.forName ("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection("jdbc:mysql://db.hufs.ac.kr:3306/s201702817DB?serverTimezone=UTC", "s201702817", "01051242733");
+			Connection con = DriverManager.getConnection("jdbc:mysql://db.hufs.ac.kr:3306/s201702817DB?serverTimezone=UTC", "아이디", "비밀번호");
 			CallableStatement c = con.prepareCall("{call find_all_supervisees(?)}");
 			System.out.print("Enter a ssn : ");
 			Scanner scan = new Scanner(System.in);
